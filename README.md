@@ -1,10 +1,6 @@
-# Quadrotor Autonomous Navigation System
+# Crazyflie Autonomous Navigation
 
-This Python script controls a quadrotor in a simulated environment using the Webots robotics simulator. The key features of the script include:
-
-- **Obstacle Avoidance:** The quadrotor stops before colliding with obstacles in all directions.
-- **Predefined Path:** The script follows a circular predefined path.
-- **Object Recognition:** Utilizes a YOLO neural network model for real-time object recognition.
+This Python script controls a Crazyflie quadrotor in Webots simulator, generating a trajectory using the A* path planning algorithm and following it using PID control. Additionally, the script utilizes YOLO for real-time person recognition, causing the quadrotor to stop upon detection.
 
 ## Authors
 
@@ -13,16 +9,16 @@ This Python script controls a quadrotor in a simulated environment using the Web
 
 ## Dependencies
 
-- `controller`, `Keyboard`, and `Supervisor` modules are imported from Webots.
-- Various controllers such as PID controllers (`pid_velocity_fixed_height_controller` and `QuadrotorController`) are used for stability and navigation.
-- Computer Vision functionalities are implemented with OpenCV (`cv2`) for object recognition using YOLO model.
+- `controller`, `Keyboard`, and `Supervisor` modules from Webots.
+- PID controllers (`pid_velocity_fixed_height_controller` and `QuadrotorController`) for stability and navigation.
+- Computer Vision functionalities with OpenCV (`cv2`) for person recognition using YOLO.
 - Other libraries include `numpy`, `math`, `threading`, `csv`, `PIL`, `matplotlib`, and custom modules like `ruta_predefinida`, `evita_obstaculos`, `astar3D`, etc.
 
 ## Usage
 
 1. Install Webots.
-2. Place the .wbt in the Webots worlds directory.
-3. Run the Webots simulator with the specified quadrotor model.
+2. Place the script in the Webots project directory.
+3. Run the Webots simulator with the specified Crazyflie model.
 
 ## Controls
 
@@ -36,16 +32,18 @@ This Python script controls a quadrotor in a simulated environment using the Web
 
 ## Autonomous Mode
 
-- The script follows a predefined circular path autonomously.
-- Object recognition using YOLO can trigger actions based on detected objects.
+- The script generates a trajectory using the A* path planning algorithm and follows it autonomously.
+- YOLO-based person recognition triggers a stop action.
 
 ## Vision System
 
-- YOLO (You Only Look Once) is used for real-time object detection.
-- Camera feed is processed to recognize and react to objects in the environment.
+- YOLO (You Only Look Once) is used for real-time person detection.
+- Camera feed is processed to recognize and react to the presence of people.
 
 ## Additional Features
 
 - Data logging: The script logs positional data and target information into CSV files for further analysis.
-- A* algorithm is implemented for path planning.
 
+**Note:** This script is designed for educational and research purposes.
+
+Feel free to customize the script and adapt it to your specific use case.
