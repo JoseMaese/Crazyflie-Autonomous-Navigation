@@ -1,0 +1,230 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/apartment_structure/protos/Wall.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/tables/protos/Table.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/living_room_furniture/protos/Sofa.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Roughcast.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/lights/protos/DoubleFluorescentLamp.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/plants/protos/PottedTree.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/bitcraze/crazyflie/protos/Crazyflie.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/humans/pedestrian/protos/Pedestrian.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.03144452617864668 -0.9983948371945196 0.04710616559145055 6.06205743762944
+  position -19.121809451337032 13.834722026112468 6.549824809717778
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 10 10 0
+  floorSize 20 20
+}
+Wall {
+  translation 20 10 1
+  size 0.5 20 8
+}
+DoubleFluorescentLamp {
+  translation 6.5 10 4
+  rotation 1 0 0 3.14159
+  intensity 100
+}
+Wall {
+  translation 10 20 1
+  rotation 0 0 1 1.5840734641020688
+  name "wall(2)"
+  size 0.5 20 8
+}
+Wall {
+  translation 10 0 1
+  rotation 0 0 1 1.5840734641020688
+  name "wall(3)"
+  size 0.5 20 8
+}
+Table {
+  translation 3 5 1
+  size 3 7 0.74
+}
+Table {
+  translation 4 10.5 5
+  name "table(1)"
+  size 2 2 1
+}
+Sofa {
+  translation 3 14.5 1
+}
+Sofa {
+  translation 7.5 16 1
+  rotation 0 0 1 -1.5309649148734152
+  name "sofa(1)"
+}
+Wall {
+  translation 10 10 0
+  name "Suelo"
+  size 20 20 1
+  appearance Roughcast {
+    colorOverride 0.666667 0.666667 0.498039
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+    IBLStrength 10
+  }
+}
+Wall {
+  translation 13.5 9.5 1
+  name "escalon1"
+  size 1 3 1
+  appearance Roughcast {
+    colorOverride 0.435294 0.435294 0.32549
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+    IBLStrength 4
+  }
+}
+Wall {
+  translation 14.5 9.5 2
+  name "escalon2"
+  size 1 3 1
+  appearance Roughcast {
+    colorOverride 0.435294 0.435294 0.32549
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+    IBLStrength 7
+  }
+}
+Wall {
+  translation 15.5 9.5 3
+  name "escalon3"
+  size 1 3 1
+  appearance Roughcast {
+    colorOverride 0.435294 0.435294 0.32549
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+    IBLStrength 10
+  }
+}
+Wall {
+  translation 5 10 4
+  name "wall(4)"
+  size 10 20 1
+  appearance Roughcast {
+    colorOverride 0.435294 0.435294 0.32549
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+    IBLStrength 15
+  }
+}
+Wall {
+  translation 15 15.5 4
+  name "wall(5)"
+  size 10 9 1
+  appearance Roughcast {
+    colorOverride 0.435294 0.435294 0.32549
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+    IBLStrength 15
+  }
+}
+Wall {
+  translation 15 4 4
+  name "wall(6)"
+  size 10 8 1
+  appearance Roughcast {
+    colorOverride 0.435294 0.435294 0.32549
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+    IBLStrength 15
+  }
+}
+Wall {
+  translation 18 9.5 4
+  name "wall(7)"
+  size 4 3 1
+  appearance Roughcast {
+    colorOverride 0.435294 0.435294 0.32549
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+    IBLStrength 15
+  }
+}
+Wall {
+  translation 10 9.5 5
+  name "wall(8)"
+  size 0.5 3.5 4
+}
+Wall {
+  translation 13 11.25 5
+  rotation 0 0 1 1.5840734641020688
+  name "wall(9)"
+  size 0.5 6 4
+}
+Wall {
+  translation 13 7.75 5
+  rotation 0 0 1 1.5840734641020688
+  name "wall(10)"
+  size 0.5 6 4
+}
+Wall {
+  translation 10 1 5
+  name "wall(11)"
+  size 0.5 2 4
+}
+Wall {
+  translation 7 1 5
+  name "wall(12)"
+  size 0.5 2 4
+}
+Wall {
+  translation 10 19 5
+  name "wall(13)"
+  size 0.5 2 4
+}
+Wall {
+  translation 7 19 5
+  name "wall(14)"
+  size 0.5 2 4
+}
+PottedTree {
+  translation 19 19 1
+}
+Pedestrian {
+  translation 8 1 6.27
+  rotation 0 0 1 1.5708
+  name "Santi"
+  controller "pedestrian_high"
+  controllerArgs [
+    "--trajectory= 8 1 6.27, 8 19"
+  ]
+}
+Crazyflie {
+  translation 2 18 1.015
+  controller "Crazyflie_main"
+}
+Pedestrian {
+  translation 8.1 1 6.369999999999999
+  rotation 0 0 1 1.5708
+  name "Javi"
+  controller "pedestrian_high"
+  controllerArgs [
+    "--speed= 0.75"
+    "--trajectory= 18 1, 18 18"
+  ]
+}
+Table {
+  translation 14 5 5
+  name "table(2)"
+  size 2 2 1
+}
