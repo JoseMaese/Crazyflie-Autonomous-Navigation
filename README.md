@@ -34,7 +34,7 @@ This Python script controls a Crazyflie quadrotor in Webots simulator, generatin
 
 - The script generates a trajectory using the A* path planning algorithm and follows it autonomously.
 - YOLO-based person recognition triggers a stop action.
-- 
+
 ![Map](images/map.png)
 
 ## Vision System
