@@ -21,7 +21,7 @@ This Python script controls a quadrotor in a simulated environment using the Web
 ## Usage
 
 1. Install Webots.
-2. Place the script in the Webots project directory.
+2. Place the .wbt in the Webots worlds directory.
 3. Run the Webots simulator with the specified quadrotor model.
 
 ## Controls
