@@ -34,17 +34,20 @@ This Python script controls a Crazyflie quadrotor in Webots simulator, generatin
 
 - The script generates a trajectory using the A* path planning algorithm and follows it autonomously.
 - YOLO-based person recognition triggers a stop action.
+- 
 ![Map](images/map.png)
-![2D Trajectory](images/trayectoria_2D.png)
-![3D Trajectory](images/Trayectoria_3D.png)
 
 ## Vision System
 
 - YOLO (You Only Look Once) is used for real-time person detection.
 - Camera feed is processed to recognize and react to the presence of people.
+
 ![Person recognition](images/webots_map.png)
 
 ## Additional Features
 
 - Data logging: The script logs positional data and target information into CSV files for further analysis.
 
+![2D Trajectory](images/trayectoria_2D.png)
+
+![3D Trajectory](images/Trayectoria_3D.png)
