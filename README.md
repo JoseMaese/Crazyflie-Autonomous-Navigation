@@ -6,6 +6,8 @@ This Python script controls a Crazyflie quadrotor in Webots simulator, generatin
 
 - [@josemaese](https://github.com/JoseMaese)
 - [@santiagomoreno0123](https://github.com/santiagomoreno0123)
+- Miguel Ballesteros Delgado
+- Javier Gil Avilés
 
 ## Dependencies
 
